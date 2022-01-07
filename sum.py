@@ -1,7 +1,5 @@
-n=int(input("enter the limit: "))
+list=input("Enter a list")
+list1=map(int,list.split())
 sum=0
-i=1
-while(i<=n):
-    sum=sum+i
-    i=i+1
-print("the sum of the numbers is",sum)
+for i in list1:sum+=i
+print("The sum of all items in list",list,"is",sum)
